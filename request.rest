@@ -1,0 +1,47 @@
+GET http://localhost:5000/posts
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoia3lsZSIsImlhdCI6MTczMzM2ODQwNiwiZXhwIjoxNzMzMzY4NDY2fQ.GFQqF57ZBKOR6I0nMuoxiZrrmP5Z6apW7mJQqWFHDJI
+
+###
+
+POST http://localhost:4000/token
+Content-Type: application/json
+
+{
+    "token" : "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoia3lsZSIsImlhdCI6MTczMzM2ODQwNiwiZXhwIjoxNzMzMzY4NDY2fQ.GFQqF57ZBKOR6I0nMuoxiZrrmP5Z6apW7mJQqWFHDJI"
+}
+
+###
+POST http://localhost:4000/login
+Content-Type: application/json
+
+{
+    "username" : "kyle"
+}
+
+###
+
+GET http://localhost:8080/users
+
+
+###
+
+POST http://localhost:8080/signup
+Content-Type: application/json
+
+{
+    "name": "John Doe",
+    "email": "john1234@example.com",
+    "password": "password123"
+}
+
+
+###
+
+
+POST http://localhost:8080/login
+Content-Type: application/json
+
+{
+    "email": "john1234@le.com",
+    "password": "password"
+}
